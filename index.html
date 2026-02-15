@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Tetris Lite</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <div class="hud">
+        <h1>3D Tetris Lite</h1>
+        <p>Poruszaj się po osi X/Z i układaj warstwy w 3D.</p>
+        <div class="stats">
+          <div>
+            <span class="label">Wynik</span>
+            <span id="score">0</span>
+          </div>
+          <div>
+            <span class="label">Poziom</span>
+            <span id="level">1</span>
+          </div>
+          <div>
+            <span class="label">Linie</span>
+            <span id="lines">0</span>
+          </div>
+        </div>
+        <div class="controls">
+          <h2>Sterowanie</h2>
+          <ul>
+            <li><strong>Strzałki</strong> – ruch w osi X/Z</li>
+            <li><strong>Q / E</strong> – obrót w osi Y</li>
+            <li><strong>Spacja</strong> – szybki zrzut</li>
+            <li><strong>P</strong> – pauza</li>
+          </ul>
+        </div>
+        <button id="restart">Restart</button>
+      </div>
+      <div class="canvas-wrap">
+        <canvas id="game"></canvas>
+        <div id="overlay" class="overlay hidden">Pauza</div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
